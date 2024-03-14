@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>HTML/CSS Studio</title>
+      <!-- import CSS styles -->
+      <link rel="stylesheet" href="styles.css" /> 
+    </head>
+     <!-- page content goes into <body> -->
+        <body>
+            <h1>A/B Testing Assignment</h1>
+            <h2>The Assignment</h2>
+            <p>
+                For this assignment, I had to run a simple A/B test on two different 
+                UI designs and analyze the results. From the results, I will draw 
+                conclusions on whether a design choice could hvae reasonably 
+                impacted user interaction. 
+            </p>
+            <h2>
+                Two Interfaces
+            </h2>
+            <h3>Data Collection: Interface A</h3>
+            <p>
+                To start, as a class, we all used Interface A to <b>make an 
+                    appointment with Adam Ng, MD at Morristown Medical Center on 
+                    April 23, 2024</b>. 
+                Then, we were given 30 minutes to make changes to Interface A 
+                that would impact the user's flow in completing the task. 
+            </p>
+            <p>
+                The changes I made to Interface A for Interface B: 
+                <ul>
+                    <li>correcting the order of dates</li>
+                    <li>adding a grey background to see which appointment the user
+                        is hovering over</li>
+                    <li>making the font darker</li>
+                    <li>making the buttons for appointments more notciable</li>
+                    <li>adding a hover feature to the buttons to show when the 
+                        user is hovering over a button</li>
+                </ul>
+            </p>
+            <div class="column">
+                <h2>Interface A</h2>
+                <img src="version-A.gif" atl="Interface A Demonstration"> 
+            </div>
+            <div class="column">
+                <h2>Interface B
+                </h2>
+                <img src="version-B.gif" atl="Interface B Demonstration"> 
+            </div>
+            <h3>
+                Data Collection: Interface B
+            </h3>
+            <p>
+                After we finished our changes, as a class, we all used Interface B 
+                to <b>make an 
+                    appointment with Adam Ng, MD at Morristown Medical Center on 
+                    April 23, 2024</b>.  
+            </p>
+            <p>
+                I then saved all the data from the uses of the two Interfaces
+                to perform statistical analysis on whether or not the changes
+                I made were significant. 
+            </p>
+            <h2>
+                Analysis
+            </h2>
+            <p>
+                For the analysis portion of this assignment, we were tasked with
+                creating three hypotheses to test. 
+                
+                We had to create hypotheses about 
+                <b>misclick rate</b> and <b>time on page</b>, and were given a choice
+                for the third hypothesis we were to test. I chose to hypothesize about 
+                and test the <b>time to first click</b> on the page because I made changes
+                to my interface that I hoped would allow the user to find their 
+                desired appointment quicker, leading to a quicker time to first 
+                click on page B than page A. 
+            </p>
+            <h3>
+                Hypothesis 1: Misclick rate
+            </h3>
+            <p>
+                <b>H_0 </b>
+                = There were the same amount of misclicks on page A and page B.
+            </p>
+            <p>
+                <b>H_1 </b>
+                = There were fewer misclicks on page B than page A. 
+            </p>
+            <p>
+                The reason behind this alternative hypothesis is that I want to 
+                see that my changes on Interface B led to fewer misclicks than Interface A. 
+            </p>
+            <h4>Predictions</h4>
+            <p>
+                I predicted that we will be able to reject the null hypothesis 
+                because I designed Interface B to show different colors for 
+                both the appointment slots and the buttons, hopefully showing the 
+                user where to correctly click to make an appointment. 
+
+            </p>
+            <h4>
+                Statistical Test and Results
+            </h4>
+            <p>
+                For this hypothesis, I performed a chi squared test to measure 
+                the differences in frequencies of misclicks. 
+
+                <ul>
+                    <li>
+                        chi-squared statistic = 31.613
+                    </li>
+                    <li>
+                        p-value = 0.001
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Because the p-value is less than 0.05, we can reject the null 
+                hypothesis, determining that there is significant difference 
+                between the frequencies of misclicks on page A and page B. 
+            </p>
+            <h3>
+                Hypothesis 2: Time on page 
+            </h3>
+            <p>
+                <b>H_0 </b>
+                = Users spent the same amount of time on each page. 
+            </p>
+            <p>
+                <b>H_1 </b>
+                = Users spent less time on page B than page A. 
+            </p>
+            <p>
+                The reason behind this alternative hypothesis is that I want to 
+                see that my changes on Interface B led to users not having to spend
+                as much time searching the page to get to their appointment. 
+            </p>
+            <h4>Predictions</h4>
+            <p>
+                I predicted that users will spend less time on Interface B than
+                Interface A because they will have an easier time finding their 
+                appointment. 
+            </p>
+            <h4>
+                Statistical Test and Results
+            </h4>
+            <p>
+                For this hypothesis, I performed a two tailed t-test to determine
+                whether or not there is statistical difference between the means 
+                of the two groups of data. 
+                <ul>
+                    <li>T-score = 4.609 </li>
+                    <li>P-value = 0.001</li>
+                    <li>Degrees of Freedom = 23.289</li>
+                </ul>
+
+            </p>
+            <p>
+                Since the p-value is less than 0.05, we can reject the null 
+                hypothesis and determine that there is statistical difference 
+                between the mean of time spent on page A and the mean of time 
+                spent on page B. 
+            </p>
+            <h3>
+                Hypothesis 3: Time to first click 
+            </h3>
+            <p>
+                <b>H_0 </b>
+                = The time to first click on page A and page B were the same. 
+            </p>
+            <p>
+                <b>H_1 </b>
+                = The time to first click on page B was faster than the time to 
+                first click on page A. 
+            </p>
+            <p>
+                The reason behind this alternative hypothesis is that I want to 
+                see that my changes on Interface B led to users finding their 
+                appointment quicker without clicking on elements of the page that 
+                were not helpful to making their appointment. 
+            </p>
+            <h4>Predictions</h4>
+            <p>
+                I predicted that the null hypothesis will be rejected and we will 
+                find statistical difference between the time to first click for 
+                Interface A and Interface B because Interface B was created in a 
+                way that it made the process of scheduling an appointment more 
+                obvious to the user in hopes to reduce the time to the first click. 
+            </p>
+            <h4>
+                Statistical Test and Results
+            </h4>
+            <p>
+                For this hypothesis, I performed a two tailed t-test to determine
+                if there is statistical difference in the means of time to first
+                click on each interface. 
+                
+                <ul>
+                    <li>
+                        T-score = 5.233
+                    </li>
+                    <li>
+                        P-value = 0.001
+                    </li>
+                    <li>
+                        Degrees of Freedom = 22.035
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Since the p-value is less than 0.05, we can reject the null 
+                hypothesis that the time to the first click on page A and page B 
+                were equal, noting that there is statistical difference between 
+                the means of the time to first click for page A and page B. 
+            </p>
+            <h2>
+                Summary
+            </h2>
+            <p>
+                Through hypothesis testing, I can determine that Interface B 
+                is better than Interface A for fewer misclicks, less time spent
+                on the page, and less time to first click. The changes that I made
+                to Interface A for Interface B led to changes in the way that users 
+                interacted with this interface. Some pitfalls of this type of 
+                A/B testing is that there were not many responses to the interfaces
+                were we can acutally determine if the changes made were significant.
+                We would need to test on a much larger scale and with people 
+                who are not familiar with the interfaces in order to perform 
+                real A/B testing. Overall, this was a great experience to be
+                able to learn about the process of A/B testing, how to create
+                hypotheses to test, choosing correct tests for hypotheses, and 
+                analyzing results. 
+            </p>
+        </body>
